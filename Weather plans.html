@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <!--Styling of the page-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <title>Weather Finding</title>
+</head>
+
+
+<body>
+    <header class="row justify-content-center text-white bg-primary mb-3">
+        <h1>Weather Locator</h1>
+    </header>
+
+    <!--creating the col and rows for the JS-->
+    <div class="row">
+        <aside class="col-12 col-lg-3 card text-white bg-secondary mb-3" style="height: 600px">
+            <section>
+                <form id="search-form" class="row justify-content-center">
+                    <h2>Search Location:</h2>
+                    <input type="search" placeholder="eg. Austin">
+                    <button class="btn btn-primary">Search</button>
+                </form>
+            </section>
+            <section id="prev-search" class="row justify-content-center"></section>
+        </aside>
+        <main class="col-12 col-lg-9">
+            <section id="current-date">
+                <section class="row">
+                    <h2 class="col-auto"></h2>
+                    <img class="col-auto">
+                </section>
+                <P></P>
+                <P></P>
+                <P></P>
+                <P></P>
+            </section>
+            
+            <h3 id="forecast-title" style="visibility:hidden">5 Day Forecast:</h3>
+            <section id="5-day-forecast" class="row justify-content-center">
+                <section class="col-12 col-md-6 col-lg-2">
+                    <h5></h5>
+                    <img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+
+                <section class="col-12 col-md-6 col-lg-2">
+                    <h5></h5>
+                    <img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+
+                <section class="col-12 col-md-6 col-lg-2">
+                    <h5></h5>
+                    <img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+
+                <section class="col-12 col-md-6 col-lg-2">
+                    <h5></h5>
+                    <img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+                <section class="col-12 col-md-6 col-lg-2">
+                    <h5></h5>
+                    <img>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </section>
+            </section>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
